@@ -18,10 +18,13 @@ if __name__ == '__main__':
         print(filho.nome, filho.idade)
 
 
-    luciano.sobrenome = 'Ramalho'
+    luciano.sobrenome = 'Ramalho' #atributo dinâmico
+    #del luciano.filhos #deletar atributos
     print(luciano.nome)
     print(luciano.idade)
     print(luciano.filhos)
+    print(luciano.__dict__) #atributo especial que guarda informações dos atributos de um objeto
+    print(renzo.__dict__)
     print(Pessoa.olhos)
     print(luciano.olhos)
 
